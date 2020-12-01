@@ -2,10 +2,17 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box; }
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
 
 html {
-  font-family: 'Kumbh Sans', sans-serif; }
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+.container {
+  position: relative;
+}
 
 header {
   padding-top: 46px;
@@ -13,34 +20,41 @@ header {
   background-repeat: no-repeat;
   background-size: contain;
   background-color: #fafafa;
-  background-position: center -130px; }
+  background-position: center -130px;
+  padding-bottom: 725px;
+}
 
 img.logo {
   display: block;
-  margin: auto; }
+  margin: auto;
+}
 
 img.heroImg {
   padding-top: 80px;
   width: 46.5%;
   display: block;
-  margin: 0 auto; }
+  margin: 0 auto;
+}
 
 h1 {
   color: #333950;
   line-height: 48px;
   text-align: center;
-  font-size: 2.22rem; }
+  font-size: 2.22rem;
+}
 
 .secondary {
   width: 93.7%;
-  margin: 64px auto; }
+  margin: 64px auto;
+}
 
 p {
   font-size: 0.88rem;
   color: #747b95;
   text-align: center;
   line-height: 26px;
-  margin: 0px auto 16px; }
+  margin: 0px auto 16px;
+}
 
 button {
   /* width: 200px; */
@@ -52,54 +66,84 @@ button {
   font-size: 0.88rem;
   color: white;
   border-radius: 55px;
-  border: none; }
+  border: none;
+}
 
 main {
-  text-align: center; }
+  text-align: center;
+  position: relative;
+  top: -725px;
+  z-index: 2;
+}
 
 .card {
   width: 327px;
   margin: 10px auto;
   padding-bottom: 40px;
-  border-radius: 20px; }
-  .card h2 {
-    padding-top: 40px;
-    font-size: 1.1rem;
-    line-height: 28px; }
-  .card h3 {
-    font-size: 3.1rem;
-    line-height: 64px;
-    margin-top: 40px; }
-  .card h4 {
-    font-size: 0.89rem;
-    line-height: 28px;
-    margin-bottom: 56px; }
-  .card button {
-    margin-top: 16px; }
+  border-radius: 20px;
+}
+
+.card h2 {
+  padding-top: 40px;
+  font-size: 1.1rem;
+  line-height: 28px;
+}
+
+.card h3 {
+  font-size: 3.1rem;
+  line-height: 64px;
+  margin-top: 40px;
+}
+
+.card h4 {
+  font-size: 0.89rem;
+  line-height: 28px;
+  margin-bottom: 56px;
+}
+
+.card button {
+  margin-top: 16px;
+}
 
 .basic {
-  background-color: #f4e2e2; }
+  background-color: #f4e2e2;
+}
 
 .pro {
   background-color: #5175ff;
   background-image: url(/assets/home/bg-pattern-header.svg);
   background-repeat: no-repeat;
   background-size: contain;
-  color: white; }
-  .pro p {
-    color: white; }
-  .pro button {
-    background-color: white;
-    color: #5175ff; }
+  color: white;
+}
+
+.pro p {
+  color: white;
+}
+
+.pro button {
+  background-color: white;
+  color: #5175ff;
+}
 
 .ultimate {
-  background-color: coral; }
+  background-color: coral;
+}
 
 footer {
   background-color: #25293a;
   background-image: url(../assets/home/bg-pattern-footer.svg);
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-size: contain;
-  height: 100vh; }
+  height: 200vh;
+  margin-top: -1471px;
+  z-index: 1;
+  position: relative;
+  color: white;
+}
 
+.timer {
+  padding-top: 800px;
+  text-align: center;
+}
 /*# sourceMappingURL=stye.css.map */

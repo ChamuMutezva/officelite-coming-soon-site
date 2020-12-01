@@ -10,6 +10,10 @@ html {
     font-family: 'Kumbh Sans', sans-serif;
 }
 
+.container {
+    position: relative;
+}
+
 header {
     padding-top: 46px;
     background-image: url(../assets/home/bg-pattern-header.svg);
@@ -17,6 +21,7 @@ header {
     background-size: contain;
     background-color: #fafafa;
     background-position: center -130px;
+    padding-bottom: 725px;
 }
 
 img.logo {
@@ -67,6 +72,9 @@ button {
 
 main {
     text-align: center;
+    position: relative;
+    top: -725px;
+    z-index: 2;
 }
 
 .card {
@@ -122,10 +130,19 @@ main {
 .ultimate {
     background-color: coral;
 }
+
 footer {
     background-color: #25293a;
     background-image: url(../assets/home/bg-pattern-footer.svg);
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size: contain;
-    height: 100vh;
+    height: 200vh;
+    margin-top: -1471px;
+    z-index: 1;
+    position: relative;
+    color: white;
+}
+.timer {
+    padding-top: 800px;
+    text-align: center;
 }

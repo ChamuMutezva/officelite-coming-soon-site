@@ -113,6 +113,7 @@ main {
 
 .basic {
     background-color: white;
+
     button {
         background-color: #cedddd;
     }
@@ -137,7 +138,8 @@ main {
 
 .ultimate {
     background-color: white;
-    button {      
+
+    button {
         background-color: #e0f0ef;
     }
 }
@@ -158,8 +160,27 @@ footer {
 .timer {
     padding-top: 800px;
     text-align: center;
+
+    h5 {
+        display: flex;
+        justify-content: center;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        font-size: 0.888rem;
+        line-height: 48px;
+        font-weight: 600;
+    }
+
+    time {
+        margin-left: 5px;
+    }
 }
-time {
+
+.countdown {
     display: flex;
-    justify-content: center;
+
+    p {
+        display: flex;
+        flex-direction: column;
+    }
 }

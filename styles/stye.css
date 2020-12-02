@@ -161,12 +161,37 @@ footer {
   text-align: center;
 }
 
-time {
+.timer h5 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 0.888rem;
+  line-height: 48px;
+  font-weight: 600;
+}
+
+.timer time {
+  margin-left: 5px;
+}
+
+.countdown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.countdown p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 /*# sourceMappingURL=stye.css.map */

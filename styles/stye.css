@@ -160,4 +160,13 @@ footer {
   padding-top: 800px;
   text-align: center;
 }
+
+time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
 /*# sourceMappingURL=stye.css.map */

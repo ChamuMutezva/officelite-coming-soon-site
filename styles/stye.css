@@ -60,12 +60,13 @@ button {
   /* width: 200px; */
   padding: 15px 50px;
   background-color: #5275ff;
+  font-weight: 600;
   margin: auto;
   display: block;
   line-height: 28px;
   font-size: 0.88rem;
   color: white;
-  border-radius: 55px;
+  border-radius: 28px;
   border: none;
 }
 
@@ -81,21 +82,24 @@ main {
   margin: 10px auto;
   padding-bottom: 40px;
   border-radius: 20px;
+  padding-top: 40px;
 }
 
 .card h2 {
-  padding-top: 40px;
   font-size: 1.1rem;
   line-height: 28px;
+  font-weight: 600;
 }
 
 .card h3 {
   font-size: 3.1rem;
   line-height: 64px;
   margin-top: 40px;
+  font-weight: 600;
 }
 
 .card h4 {
+  margin-top: 8px;
   font-size: 0.89rem;
   line-height: 28px;
   margin-bottom: 56px;
@@ -103,10 +107,15 @@ main {
 
 .card button {
   margin-top: 16px;
+  color: #5275ff;
 }
 
 .basic {
-  background-color: #f4e2e2;
+  background-color: white;
+}
+
+.basic button {
+  background-color: #cedddd;
 }
 
 .pro {
@@ -127,7 +136,11 @@ main {
 }
 
 .ultimate {
-  background-color: coral;
+  background-color: white;
+}
+
+.ultimate button {
+  background-color: #e0f0ef;
 }
 
 footer {
@@ -135,8 +148,9 @@ footer {
   background-image: url(../assets/home/bg-pattern-footer.svg);
   background-repeat: repeat;
   background-size: contain;
-  height: 200vh;
+  height: auto;
   margin-top: -1471px;
+  padding-bottom: 40px;
   z-index: 1;
   position: relative;
   color: white;

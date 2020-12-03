@@ -160,7 +160,8 @@ footer {
 .timer {
     padding-top: 800px;
     text-align: center;
-    width: 87.3%;
+    width: 327px;
+    max-width: 87.3%;
     margin: auto;
 
     h5 {
@@ -204,5 +205,38 @@ footer {
     span {
         font-size: 0.7rem;
         line-height: 28px;
+    }
+}
+
+@media screen and (min-width: 720px) {
+    .logoContainer, .contentWrapper {
+        width: 82.7%;
+        margin: auto;
+    }
+    img.logo {
+        display: block;
+        margin: 0;
+    }
+    .contentWrapper {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+    .secondary {
+        width: 76%;  
+        h1 {
+            text-align: left;
+        }  
+        p {
+            text-align: left;
+        } 
+        button {
+            margin-left: 0;
+        }   
+    }
+    .card {
+       display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 82.7%;
     }
 }

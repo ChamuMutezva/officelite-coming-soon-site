@@ -159,7 +159,8 @@ footer {
 .timer {
   padding-top: 800px;
   text-align: center;
-  width: 87.3%;
+  width: 327px;
+  max-width: 87.3%;
   margin: auto;
 }
 
@@ -219,5 +220,47 @@ footer {
 .countdown span {
   font-size: 0.7rem;
   line-height: 28px;
+}
+
+@media screen and (min-width: 720px) {
+  .logoContainer, .contentWrapper {
+    width: 82.7%;
+    margin: auto;
+  }
+  img.logo {
+    display: block;
+    margin: 0;
+  }
+  .contentWrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .secondary {
+    width: 76%;
+  }
+  .secondary h1 {
+    text-align: left;
+  }
+  .secondary p {
+    text-align: left;
+  }
+  .secondary button {
+    margin-left: 0;
+  }
+  .card {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    width: 82.7%;
+  }
 }
 /*# sourceMappingURL=stye.css.map */

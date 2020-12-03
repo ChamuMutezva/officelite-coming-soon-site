@@ -80,6 +80,7 @@ main {
 
 .card {
     width: 327px;
+    min-width: 82%;
     margin: 10px auto;
     padding-bottom: 40px;
     border-radius: 20px;
@@ -217,10 +218,14 @@ footer {
         display: block;
         margin: 0;
     }
+    img.heroImg {       
+        width: 91%;        
+    }
     .contentWrapper {
         display: flex;
         flex-direction: row-reverse;
         align-items: center;
+        flex-wrap: nowrap;
     }
     .secondary {
         width: 76%;  
@@ -237,6 +242,26 @@ footer {
     .card {
        display: grid;
         grid-template-columns: 1fr 1fr;
-        width: 82.7%;
+        justify-items: self-start;
+        padding-left: 30px;
+        h3 {           
+             margin-top: 0px;            
+        }
+        h4 {
+            margin-top: 0;            
+            margin-bottom: 0;
+        }
+        p{
+            margin: 0;
+        }
+        button {            
+            margin: 0;
+        }
+    }
+    footer {
+        margin-top: -1120px;
+        .timer {
+            padding-top: 462px;           
+        }
     }
 }

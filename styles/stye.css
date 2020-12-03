@@ -79,6 +79,7 @@ main {
 
 .card {
   width: 327px;
+  min-width: 82%;
   margin: 10px auto;
   padding-bottom: 40px;
   border-radius: 20px;
@@ -231,6 +232,9 @@ footer {
     display: block;
     margin: 0;
   }
+  img.heroImg {
+    width: 91%;
+  }
   .contentWrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -242,6 +246,8 @@ footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
   .secondary {
     width: 76%;
@@ -260,7 +266,27 @@ footer {
     display: grid;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-    width: 82.7%;
+    justify-items: self-start;
+    padding-left: 30px;
+  }
+  .card h3 {
+    margin-top: 0px;
+  }
+  .card h4 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .card p {
+    margin: 0;
+  }
+  .card button {
+    margin: 0;
+  }
+  footer {
+    margin-top: -1120px;
+  }
+  footer .timer {
+    padding-top: 462px;
   }
 }
 /*# sourceMappingURL=stye.css.map */

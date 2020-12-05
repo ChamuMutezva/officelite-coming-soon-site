@@ -160,8 +160,6 @@ footer {
 .timer {
   padding-top: 800px;
   text-align: center;
-  width: 327px;
-  max-width: 87.3%;
   margin: auto;
 }
 
@@ -187,6 +185,12 @@ footer {
 .timer button {
   margin-top: 40px;
   margin-bottom: 82px;
+}
+
+.timerDisplay {
+  width: 327px;
+  max-width: 87.3%;
+  margin: auto;
 }
 
 .countdown {
@@ -292,7 +296,7 @@ footer {
   }
 }
 
-@media screen and (min-width: 1220px) {
+@media screen and (min-width: 1440px) {
   h1 {
     font-size: 3.1rem;
     line-height: 64px;
@@ -337,6 +341,30 @@ footer {
   .secondary {
     width: 41.3%;
     margin-left: 0;
+  }
+  .timer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 87.2%;
+  }
+  .timer button {
+    margin-right: 15px;
+  }
+  .timerDisplay {
+    margin-left: 15px;
+  }
+}
+
+@media screen and (min-width: 1650px) {
+  .container {
+    width: 95%;
+    max-width: 1490px;
+    margin: 0 auto;
   }
 }
 /*# sourceMappingURL=stye.css.map */

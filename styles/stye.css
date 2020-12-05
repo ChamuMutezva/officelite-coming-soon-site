@@ -78,8 +78,8 @@ main {
 }
 
 .card {
-  width: 327px;
-  min-width: 82%;
+  width: 600px;
+  max-width: 87.2%;
   margin: 10px auto;
   padding-bottom: 40px;
   border-radius: 20px;
@@ -224,7 +224,8 @@ footer {
 }
 
 @media screen and (min-width: 720px) {
-  .logoContainer, .contentWrapper {
+  .logoContainer,
+  .contentWrapper {
     width: 82.7%;
     margin: auto;
   }
@@ -267,7 +268,8 @@ footer {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
     justify-items: self-start;
-    padding-left: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
   .card h3 {
     margin-top: 0px;
@@ -287,6 +289,54 @@ footer {
   }
   footer .timer {
     padding-top: 462px;
+  }
+}
+
+@media screen and (min-width: 1220px) {
+  h1 {
+    font-size: 3.1rem;
+    line-height: 64px;
+    margin-bottom: 24px;
+  }
+  p {
+    font-size: 1rem;
+    line-height: 28px;
+  }
+  header {
+    padding-bottom: 960px;
+    background-position: 200% -104%;
+    background-size: auto;
+  }
+  main {
+    top: -875px;
+    width: 82.7%;
+    margin: auto;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .card {
+    width: 475px;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .card h3 {
+    margin-top: 40px;
+  }
+  .card h4 {
+    margin-top: 8px;
+    margin-bottom: 56px;
+  }
+  .card p {
+    margin: 0px auto 16px;
+  }
+  .secondary {
+    width: 41.3%;
+    margin-left: 0;
   }
 }
 /*# sourceMappingURL=stye.css.map */

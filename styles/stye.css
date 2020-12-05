@@ -41,11 +41,13 @@ h1 {
   line-height: 48px;
   text-align: center;
   font-size: 2.22rem;
+  margin-bottom: 24px;
 }
 
 .secondary {
   width: 93.7%;
   margin: 64px auto;
+  padding: 0 42px;
 }
 
 p {
@@ -53,7 +55,7 @@ p {
   color: #747b95;
   text-align: center;
   line-height: 26px;
-  margin: 0px auto 16px;
+  margin: 0px auto 24px;
 }
 
 button {
@@ -73,14 +75,14 @@ button {
 main {
   text-align: center;
   position: relative;
-  top: -725px;
+  top: -690px;
   z-index: 2;
 }
 
 .card {
   width: 600px;
   max-width: 87.2%;
-  margin: 10px auto;
+  margin: 0 auto 32px;
   padding-bottom: 40px;
   border-radius: 20px;
   padding-top: 40px;
@@ -150,7 +152,7 @@ footer {
   background-repeat: repeat;
   background-size: contain;
   height: auto;
-  margin-top: -1471px;
+  margin-top: -1510px;
   padding-bottom: 40px;
   z-index: 1;
   position: relative;
@@ -227,6 +229,10 @@ footer {
   line-height: 28px;
 }
 
+.signupTimer {
+  padding-top: 0px;
+}
+
 @media screen and (min-width: 720px) {
   .logoContainer,
   .contentWrapper {
@@ -256,6 +262,7 @@ footer {
   }
   .secondary {
     width: 76%;
+    padding: 0;
   }
   .secondary h1 {
     text-align: left;

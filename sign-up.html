@@ -1,36 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
 
-    <title>Frontend Mentor | Officelite coming soon site</title>
+  <title>Frontend Mentor | Officelite coming soon site</title>
+  <link rel="stylesheet" href="./styles/stye.css">
 </head>
+
 <body>
-  Work smarter. Save time.
+  <div class="container">
+    <header>
+      <div class="logoContainer">
+        <img class="logo" src="./assets/shared/logo.svg" alt="">
+      </div>
+      <div class="contentWrapper">
 
-  Easily manage your projects. Get on the list and receive in-app perks available only to 
-  early subscribers. We are moving into final development and getting ready for official launch soon.
+        <div class="secondary">
+          <h1> Work smarter. Save time.</h1>
+          <p>
+            Easily manage your projects. Get on the list and receive in-app perks available only to
+            early subscribers. We are moving into final development and getting ready for official launch soon.
+          </p>
+        </div>
 
-  <!-- If you're choosing to make this date dynamic, set it to 30 days in the future from the moment the visitor views the page -->
-  Coming 4 Nov 2020
+        <div class="timer signupTimer">
+          <div class="timerDisplay">
+            <h5> Coming <time datetime="2021-01-11"> 11 Jan 2021</time></h5>
+            <div class="timeLeft">
+              <div class="countdown">
+                <p id="days"> 47 <span>Days</span> </p>
+                <p id="hours"> 07<span>Hours</span> </p>
+                <p id="mins"> 56 <span> Min </span> </p>
+                <p id="secs">14 <span>Sec</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
 
-  <!-- If you're choosing to make this timer dynamic, have it countdown from the date you set above -->
-  47 Days
-  07 Hours
-  56 Min
-  14 Sec
+    </header>
+
+    <main>
+      <form id="formsection">
+        <label>Name
+          <input type="text" name="name" id="name" required class="feedback">
+          <small>This field is required</small>
+        </label>
+        <label>Email
+          <input type="email" name="email" id="email" required class="feedback">
+          <small>This field is required</small>
+        </label>
+        <label for="plan-select">
+          <select name="pets" id="plan-select">
+            <option value="pro"> Pro Pack $9.99 </option>
+            <option value="pro"> Pro Pack $9.99 </option>
+            <option value="ultimate"> Ultimate Pack $19.99</option>
+          </select>
+        </label>
+        <label>Phone number
+          <input type="tel" name="tel" id="tel" required class="feedback">
+          <small>This field is required</small>
+        </label>
+        <label>Company name
+          <input type="text" name="company" id="company" required class="feedback">
+          <small>This field is required</small>
+        </label>
+
+
+
+        <div class="btnWrapper">
+          <input type="submit" value="submit">
+        </div>
+
+      </form>
+    </main>
+
+    <footer>
+      footer
+    </footer>
+  </div>
+
+
+
+
+
 
   Name
   Email Address
   Basic Pack Free
-  Basic Pack Free
-  Pro Pack $9.99
-  Ultimate Pack $19.99
+
+
   Phone Number
   Company
   Get on the list
+  <script src="main.js"></script>
 </body>
+
 </html>

@@ -311,9 +311,13 @@ footer {
     background-position: 200% -104%;
     background-size: auto;
   }
+  .logoContainer, .contentWrapper {
+    width: 70.15%;
+    margin: auto;
+  }
   main {
     top: -875px;
-    width: 82.7%;
+    width: 50.15%;
     margin: auto;
     display: -ms-grid;
     display: grid;
@@ -323,7 +327,7 @@ footer {
         justify-content: space-around;
   }
   .card {
-    width: 475px;
+    width: 350px;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     justify-items: center;
@@ -350,7 +354,7 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    width: 87.2%;
+    width: 70.15%;
   }
   .timer button {
     margin-right: 15px;

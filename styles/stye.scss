@@ -308,9 +308,13 @@ footer {
         background-position: 200% -104%;
         background-size: auto;
     }
+    .logoContainer, .contentWrapper {
+        width: 70.15%;
+        margin: auto;
+    }
     main {
         top: -875px;
-        width: 82.7%;
+        width: 50.15%;
         margin: auto;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -318,7 +322,7 @@ footer {
     }
 
     .card {
-        width: 475px;
+        width: 350px;
         grid-template-columns: 1fr;
         justify-items: center;
 
@@ -342,7 +346,7 @@ footer {
     .timer {
         display: flex;
         flex-direction: row;
-        width: 87.2%;
+        width: 70.15%;
         button {
             margin-right: 15px;
         }

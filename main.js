@@ -28,14 +28,28 @@ function initialiseClock(sec, min, hour, day, endtime) {
     const timesInterval = setInterval(() => {
         const timeRemaining = getRemainingTime(endtime)
 
-        daysLeft.innerHTML = `${timeRemaining.days} <span> Days</span`
-        hoursLeft.innerHTML = `${timeRemaining.hours} <span> Hours</span`
-        minsLeft.innerHTML = `${timeRemaining.mins} <span> Minutes</span`
-        secsLeft.innerHTML = timeRemaining.seconds > 10 ?
-            `0${timeRemaining.seconds} <span> Seconds</span` :
-            `${timeRemaining.seconds} <span> Seconds</span`
+        timeRemaining.days < 10 ?
+            daysLeft.innerHTML = `0${timeRemaining.days} <span> Days</span` :
+            daysLeft.innerHTML = `${timeRemaining.days} <span> Days</span`
+
+        timeRemaining.hours < 10 ?
+            hoursLeft.innerHTML = `0${timeRemaining.hours} <span> Hours</span` :
+            hoursLeft.innerHTML = `${timeRemaining.hours} <span> Hours</span`
+
+        timeRemaining.mins < 10 ?
+            minsLeft.innerHTML = `0${timeRemaining.mins} <span> Minutes</span` :
+            minsLeft.innerHTML = `${timeRemaining.mins} <span> Minutes</span`
+
+        timeRemaining.seconds < 10 ?
+            secsLeft.innerHTML = `0${timeRemaining.seconds} <span> Seconds</span` :
+            secsLeft.innerHTML = `${timeRemaining.seconds} <span> Seconds</span`
 
         if (timeRemaining.totalTime <= 0) {
+            daysLeft.innerHTML = "00"
+            hoursLeft.innerHTML = "00"
+            minsLeft.innerHTML = "00"
+            secsLeft.innerHTML = "00"
+
             clearInterval(timesInterval)
         }
     }, 1000)

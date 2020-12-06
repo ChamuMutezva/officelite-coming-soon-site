@@ -244,12 +244,18 @@ a {
   text-decoration: none;
 }
 
+.signupHeader {
+  padding-bottom: 625px;
+}
+
 .signupTimer {
   padding-top: 0px;
 }
 
 .signupFooter {
-  margin-top: -566px;
+  margin-top: -790px;
+  height: 320px;
+  border: 13px;
 }
 
 form#formsection {
@@ -257,6 +263,8 @@ form#formsection {
   margin: auto;
   background-color: white;
   padding-top: 30px;
+  padding-bottom: 30px;
+  border-radius: 13px;
 }
 
 label {
@@ -269,7 +277,7 @@ label {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 30px auto;
+  margin: 10px auto;
   padding: 5px;
   font-size: 1rem;
   -webkit-box-align: baseline;
@@ -285,6 +293,7 @@ input {
   border: none;
   outline: none;
   font-size: 1rem;
+  margin-top: 20px;
 }
 
 small {
@@ -307,6 +316,10 @@ input.submitForm {
   padding: 20px;
   width: 279px;
   border-radius: 28px;
+}
+
+.signupMain {
+  top: -578px;
 }
 
 @media screen and (min-width: 720px) {
@@ -394,7 +407,8 @@ input.submitForm {
     background-position: 200% -104%;
     background-size: auto;
   }
-  .logoContainer, .contentWrapper {
+  .logoContainer,
+  .contentWrapper {
     width: 70.15%;
     margin: auto;
   }

@@ -13,7 +13,7 @@
 
 <body>
   <div class="container">
-    <header>
+    <header class="signupHeader">
       <div class="logoContainer">
         <img class="logo" src="./assets/shared/logo.svg" alt="">
       </div>
@@ -43,20 +43,20 @@
 
     </header>
 
-    <main>
+    <main class="signupMain">
       <form id="formsection">
         <label>Name
           <input type="text" name="name" id="name" required class="feedback">
           <small>This field is required</small>
         </label>
-        <label>Email
+        <label>Email Address
           <input type="email" name="email" id="email" required class="feedback">
           <small>This field is required</small>
         </label>
         
         <label for="plan-select">
           <select name="package" id="plan-select">
-            <option value="basic"> Basic Free </option>
+            <option value="basic">Basic Pack Free</option>
             <option value="pro"> Pro Pack $9.99 </option>
             <option value="ultimate"> Ultimate Pack $19.99</option>
           </select>
@@ -66,38 +66,21 @@
           <input type="tel" name="tel" id="tel" required class="feedback">
           <small>This field is required</small>
         </label>
-        <label>Company name
+        <label>Company 
           <input type="text" name="company" id="company" required class="feedback">
           <small>This field is required</small>
         </label>
 
-
-
         <div class="btnWrapper">
-          <input type="submit" class="submitForm" value="submit">
+          <input type="submit" class="submitForm" value="Get on the list">
         </div>
 
       </form>
     </main>
 
-    <footer class="signupFooter">
-      footer
-    </footer>
+    <footer class="signupFooter"></footer>
   </div>
 
-
-
-
-
-
-  Name
-  Email Address
-  Basic Pack Free
-
-
-  Phone Number
-  Company
-  Get on the list
   <script src="main.js"></script>
 </body>
 

@@ -231,7 +231,7 @@ footer {
 }
 
 a {
-  padding: 14px 45.5px;
+  padding: 10px 10px;
   background-color: #5275ff;
   font-weight: 600;
   margin: auto;
@@ -444,6 +444,9 @@ input.submitForm {
   }
   .timerDisplay {
     margin-left: 15px;
+  }
+  a {
+    margin: auto 0;
   }
 }
 

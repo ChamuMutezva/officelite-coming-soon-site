@@ -122,7 +122,7 @@ main {
 }
 
 .pro {
-  background-color: #5175ff;
+  background-color: #5275ff;
   background-image: url(/assets/home/bg-pattern-header.svg);
   background-repeat: no-repeat;
   background-size: contain;
@@ -135,7 +135,7 @@ main {
 
 .pro button {
   background-color: white;
-  color: #5175ff;
+  color: #5275ff;
 }
 
 .ultimate {
@@ -150,8 +150,9 @@ footer {
   background-color: #25293a;
   background-image: url(../assets/home/bg-pattern-footer.svg);
   background-repeat: repeat;
-  background-size: contain;
+  background-size: cover;
   height: auto;
+  background-position: center;
   margin-top: -1510px;
   padding-bottom: 40px;
   z-index: 1;
@@ -181,7 +182,7 @@ footer {
 
 .timer time {
   margin-left: 5px;
-  color: #5175ff;
+  color: #5275ff;
 }
 
 .timer button {
@@ -229,8 +230,83 @@ footer {
   line-height: 28px;
 }
 
+a {
+  padding: 14px 45.5px;
+  background-color: #5275ff;
+  font-weight: 600;
+  margin: auto;
+  display: block;
+  line-height: 28px;
+  font-size: 0.88rem;
+  color: white;
+  border-radius: 28px;
+  width: 169px;
+  text-decoration: none;
+}
+
 .signupTimer {
   padding-top: 0px;
+}
+
+.signupFooter {
+  margin-top: -566px;
+}
+
+form#formsection {
+  width: 80%;
+  margin: auto;
+  background-color: white;
+  padding-top: 30px;
+}
+
+label {
+  position: relative;
+  width: 84%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 30px auto;
+  padding: 5px;
+  font-size: 1rem;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  border-bottom: 1px solid #0a0505;
+}
+
+input {
+  width: 100%;
+  background-color: white;
+  color: white;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+small {
+  position: absolute;
+  bottom: -20px;
+  color: #F67E7E;
+  font-size: 1rem;
+  visibility: hidden;
+}
+
+select#plan-select {
+  width: 100%;
+  border: none;
+  outline: none;
+  margin-bottom: 20px;
+}
+
+input.submitForm {
+  background: #5275ff;
+  padding: 20px;
+  width: 279px;
+  border-radius: 28px;
 }
 
 @media screen and (min-width: 720px) {

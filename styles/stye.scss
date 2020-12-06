@@ -208,6 +208,7 @@ footer {
         display: flex;
         flex-direction: column;
         width: 72px;
+        max-width: 20%;
         height: 92px;
         align-items: center;
         justify-content: center;
@@ -239,9 +240,10 @@ a {
     text-decoration: none;
 }
 
-//SIGNUP SPECIFIC STYLING
+//SIGNUP MOBILE SPECIFIC STYLING
 .signupHeader {
     padding-bottom: 625px;
+    background-image: none;
 }
 .signupTimer {
     padding-top: 0px;
@@ -304,6 +306,7 @@ input.submitForm {
     background: $btn-bg-color;
     padding: 20px;
     width: 279px;
+    max-width: 90%;
     border-radius: 28px;
 }
 
@@ -311,7 +314,7 @@ input.submitForm {
     top: -578px;
 }
 
-// END OF SIGNUP PAGE STYLING
+// END OF SIGNUP MOBILE PAGE STYLING
 @media screen and (min-width: 720px) {
 
     .logoContainer,
@@ -385,6 +388,18 @@ input.submitForm {
             padding-top: 462px;
         }
     }
+
+    //------Signup form styling tablet ------
+    .contentWrapperSignUp {
+        flex-direction: column;
+        h1 {
+            text-align: center;
+        }
+        .secondary p {
+            text-align: center;
+        }
+    }
+    //----end of Signup form styling tablet ------
 }
 
 @media screen and (min-width: 1440px) {
@@ -461,6 +476,26 @@ input.submitForm {
     a {
         margin: auto 0;
     }
+    //signup desktop
+    .signupMain {
+        top: 78px;
+        right: 220px;
+        position: absolute;
+        grid-template-columns: 1fr;
+        width: 35.15%;
+    }
+    .signupFooter {
+        top: 0;
+        position: absolute;
+        width: 33%;
+        margin-top: 0;
+        right: 0;
+        height: 100vh;
+    }
+    .signupHeader {
+        padding-bottom: 0;
+        height: 100vh;
+    }
 }
 
 @media screen and (min-width: 1650px) {
@@ -469,4 +504,5 @@ input.submitForm {
         max-width: 1490px;
         margin: 0 auto;
     }
+    
 }

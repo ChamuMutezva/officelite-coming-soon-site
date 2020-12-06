@@ -211,6 +211,7 @@ footer {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 72px;
+  max-width: 20%;
   height: 92px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -246,6 +247,7 @@ a {
 
 .signupHeader {
   padding-bottom: 625px;
+  background-image: none;
 }
 
 .signupTimer {
@@ -315,6 +317,7 @@ input.submitForm {
   background: #5275ff;
   padding: 20px;
   width: 279px;
+  max-width: 90%;
   border-radius: 28px;
 }
 
@@ -390,6 +393,18 @@ input.submitForm {
   footer .timer {
     padding-top: 462px;
   }
+  .contentWrapperSignUp {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contentWrapperSignUp h1 {
+    text-align: center;
+  }
+  .contentWrapperSignUp .secondary p {
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -461,6 +476,26 @@ input.submitForm {
   }
   a {
     margin: auto 0;
+  }
+  .signupMain {
+    top: 78px;
+    right: 220px;
+    position: absolute;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    width: 35.15%;
+  }
+  .signupFooter {
+    top: 0;
+    position: absolute;
+    width: 33%;
+    margin-top: 0;
+    right: 0;
+    height: 100vh;
+  }
+  .signupHeader {
+    padding-bottom: 0;
+    height: 100vh;
   }
 }
 

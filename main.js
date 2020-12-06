@@ -37,12 +37,12 @@ function initialiseClock(sec, min, hour, day, endtime) {
             hoursLeft.innerHTML = `${timeRemaining.hours} <span> Hours</span`
 
         timeRemaining.mins < 10 ?
-            minsLeft.innerHTML = `0${timeRemaining.mins} <span> Minutes</span` :
-            minsLeft.innerHTML = `${timeRemaining.mins} <span> Minutes</span`
+            minsLeft.innerHTML = `0${timeRemaining.mins} <span> Min</span` :
+            minsLeft.innerHTML = `${timeRemaining.mins} <span> Min</span`
 
         timeRemaining.seconds < 10 ?
-            secsLeft.innerHTML = `0${timeRemaining.seconds} <span> Seconds</span` :
-            secsLeft.innerHTML = `${timeRemaining.seconds} <span> Seconds</span`
+            secsLeft.innerHTML = `0${timeRemaining.seconds} <span> Sec</span` :
+            secsLeft.innerHTML = `${timeRemaining.seconds} <span> Sec</span`
 
         if (timeRemaining.totalTime <= 0) {
             daysLeft.innerHTML = "00"

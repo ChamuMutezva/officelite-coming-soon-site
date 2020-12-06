@@ -240,6 +240,13 @@ a {
     text-decoration: none;
 }
 
+.errorDisplay{
+    visibility: visible;
+}
+.invalidInput {
+    border-bottom: 1px solid red;
+}
+
 //SIGNUP MOBILE SPECIFIC STYLING
 .signupHeader {
     padding-bottom: 625px;
@@ -273,18 +280,19 @@ label {
     padding: 5px;
     font-size: 1rem;
     align-items: baseline;
-    border-bottom: 1px solid rgb(10, 5, 5);
+   
 }
 
 input {
     width: 100%;
     background-color: white;
-    color: white;
+    color: black;
     border: none;
     outline: none;
     // padding-bottom: 10px;
     font-size: 1rem;
     margin-top: 20px;
+    border-bottom: 1px solid rgb(10, 5, 5);
 }
 
 small {

@@ -1,4 +1,7 @@
-console.log("Hello world")
+const inputs = Array.from(document.querySelectorAll(".feedback"));
+let resetInputs = true;
+const form = document.querySelector("form")
+
 const deadline = 'January 11 2021 04:59:59 GMT+0200';
 
 const getRemainingTime = (endtime) => {
@@ -56,3 +59,46 @@ function initialiseClock(sec, min, hour, day, endtime) {
 }
 
 initialiseClock("secs", "mins", "hours", "days", deadline)
+
+//contact page
+inputs.forEach(input => {
+    console.log(input);
+  
+   input.addEventListener("invalid", function () {
+    input.nextElementSibling.classList.add("errorDisplay");
+   // input.closest("label").classList.add("invalidInput")
+    input.classList.add("invalidInput")
+   })
+
+   input.addEventListener("input", function () {
+       if (input.validity.valid) {
+        input.nextElementSibling.classList.remove("errorDisplay");
+        input.classList.remove("invalidInput")
+      // input.closest("label").classList.add("invalidInput")
+       } else {
+           resetInputs = false;
+       }
+   })
+
+})
+
+if (form !== null) {
+    form.addEventListener("submit", (evt) => {
+        console.log(evt.target);
+        evt.preventDefault();
+        if (resetInputs) {
+            //clear all inputs when data is correct
+            inputs.forEach(input => {
+                console.log("Clear all");
+                input.value = "";
+
+            })
+        }
+        if(resetInputs){
+            alert("Thank you, form successfully submitted")
+        }
+  
+    })
+
+}
+

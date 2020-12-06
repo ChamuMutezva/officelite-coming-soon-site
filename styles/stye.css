@@ -245,6 +245,14 @@ a {
   text-decoration: none;
 }
 
+.errorDisplay {
+  visibility: visible;
+}
+
+.invalidInput {
+  border-bottom: 1px solid red;
+}
+
 .signupHeader {
   padding-bottom: 625px;
   background-image: none;
@@ -285,17 +293,17 @@ label {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
-  border-bottom: 1px solid #0a0505;
 }
 
 input {
   width: 100%;
   background-color: white;
-  color: white;
+  color: black;
   border: none;
   outline: none;
   font-size: 1rem;
   margin-top: 20px;
+  border-bottom: 1px solid #0a0505;
 }
 
 small {

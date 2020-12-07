@@ -61,17 +61,17 @@ function initialiseClock(sec, min, hour, day, endtime) {
 initialiseClock("secs", "mins", "hours", "days", deadline)
 
 //contact page
-inputs.forEach(input => {
-    console.log(input);
+inputs.forEach((input, idk) => {
+    console.log(idk);
 
     input.addEventListener("invalid", function () {
         // input.nextElementSibling.classList.add("errorDisplay");
         // input.closest("label").classList.add("invalidInput")
-        const confirmed = document.querySelector(".confirmation")
-        const errorDisplay = document.querySelector(".error")
-        console.log(errorDisplay)
-        confirmed.classList.add("confirmed")
-        errorDisplay.classList.add("confirmed")
+        const confirmed = document.querySelectorAll(".confirmation")
+        const errorDisplay = document.querySelectorAll(".error")
+        console.log(errorDisplay[idk])
+        confirmed[idk].classList.add("confirmed")
+        errorDisplay[idk].classList.add("confirmed")
         input.classList.add("invalidInput")
     })
 
@@ -80,9 +80,9 @@ inputs.forEach(input => {
             // input.nextElementSibling.classList.remove("errorDisplay");
             input.classList.remove("invalidInput")
             // input.closest("label").classList.add("invalidInput")
-            const confirmed = document.querySelector(".confirmation")
-            const errorDisplay = document.querySelector(".error")
-            errorDisplay.classList.remove("confirmed")
+           // const confirmed = document.querySelectorAll(".confirmation")
+            const errorDisplay = document.querySelectorAll(".error")
+            errorDisplay[idk].classList.remove("confirmed")
         } else {
             resetInputs = false;
         }
@@ -96,15 +96,15 @@ if (form !== null) {
         evt.preventDefault();
         if (resetInputs) {
             //clear all inputs when data is correct
-            inputs.forEach(input => {
+            inputs.forEach((input, idk) => {
                 console.log("Clear all");
                 input.value = "";
-
+                const confirmed = document.querySelectorAll(".confirmation")
+                confirmed[idk].classList.remove("confirmed")
             })
-        }
-        if (resetInputs) {
             alert("Thank you, form successfully submitted")
         }
+        
 
     })
 

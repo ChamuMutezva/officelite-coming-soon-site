@@ -63,22 +63,30 @@ initialiseClock("secs", "mins", "hours", "days", deadline)
 //contact page
 inputs.forEach(input => {
     console.log(input);
-  
-   input.addEventListener("invalid", function () {
-    input.nextElementSibling.classList.add("errorDisplay");
-   // input.closest("label").classList.add("invalidInput")
-    input.classList.add("invalidInput")
-   })
 
-   input.addEventListener("input", function () {
-       if (input.validity.valid) {
-        input.nextElementSibling.classList.remove("errorDisplay");
-        input.classList.remove("invalidInput")
-      // input.closest("label").classList.add("invalidInput")
-       } else {
-           resetInputs = false;
-       }
-   })
+    input.addEventListener("invalid", function () {
+        // input.nextElementSibling.classList.add("errorDisplay");
+        // input.closest("label").classList.add("invalidInput")
+        const confirmed = document.querySelector(".confirmation")
+        const errorDisplay = document.querySelector(".error")
+        console.log(errorDisplay)
+        confirmed.classList.add("confirmed")
+        errorDisplay.classList.add("confirmed")
+        input.classList.add("invalidInput")
+    })
+
+    input.addEventListener("input", function () {
+        if (input.validity.valid) {
+            // input.nextElementSibling.classList.remove("errorDisplay");
+            input.classList.remove("invalidInput")
+            // input.closest("label").classList.add("invalidInput")
+            const confirmed = document.querySelector(".confirmation")
+            const errorDisplay = document.querySelector(".error")
+            errorDisplay.classList.remove("confirmed")
+        } else {
+            resetInputs = false;
+        }
+    })
 
 })
 
@@ -94,10 +102,10 @@ if (form !== null) {
 
             })
         }
-        if(resetInputs){
+        if (resetInputs) {
             alert("Thank you, form successfully submitted")
         }
-  
+
     })
 
 }

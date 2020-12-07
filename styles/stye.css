@@ -333,6 +333,22 @@ input.submitForm {
   top: -578px;
 }
 
+.confirmation {
+  right: 10px;
+  position: absolute;
+  visibility: hidden;
+}
+
+img.error {
+  position: absolute;
+  left: 0;
+  visibility: hidden;
+}
+
+.confirmed {
+  visibility: visible !important;
+}
+
 @media screen and (min-width: 720px) {
   .logoContainer,
   .contentWrapper {

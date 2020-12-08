@@ -18,7 +18,7 @@ header {
   padding-top: 46px;
   background-image: url(../assets/home/bg-pattern-header.svg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 110%;
   background-color: #fafafa;
   background-position: center -130px;
   padding-bottom: 725px;
@@ -58,9 +58,9 @@ p {
   margin: 0px auto 24px;
 }
 
-button {
-  /* width: 200px; */
-  padding: 14px 45.5px;
+a {
+  width: 171px;
+  padding: 15px 46px;
   background-color: #5275ff;
   font-weight: 600;
   margin: auto;
@@ -70,6 +70,8 @@ button {
   color: white;
   border-radius: 28px;
   border: none;
+  text-decoration: none;
+  text-align: center;
 }
 
 main {
@@ -117,8 +119,9 @@ main {
   background-color: white;
 }
 
-.basic button {
+.basic a {
   background-color: #cedddd;
+  color: #5275ff;
 }
 
 .pro {
@@ -133,7 +136,7 @@ main {
   color: white;
 }
 
-.pro button {
+.pro a {
   background-color: white;
   color: #5275ff;
 }
@@ -142,8 +145,9 @@ main {
   background-color: white;
 }
 
-.ultimate button {
+.ultimate a {
   background-color: #e0f0ef;
+  color: #5275ff;
 }
 
 footer {
@@ -231,20 +235,20 @@ footer {
   line-height: 28px;
 }
 
+/*
 a {
-  padding: 10px 10px;
-  background-color: #5275ff;
-  font-weight: 600;
-  margin: auto;
-  display: block;
-  line-height: 28px;
-  font-size: 0.88rem;
-  color: white;
-  border-radius: 28px;
-  width: 169px;
-  text-decoration: none;
-}
-
+    padding: 10px 10px;
+    background-color: $btn-bg-color;
+    font-weight: 600;
+    margin: auto;
+    display: block;
+    line-height: 28px;
+    font-size: 0.88rem;
+    color: white;
+    border-radius: 28px;
+    width: 169px;
+    text-decoration: none;
+} */
 .errorDisplay {
   visibility: visible;
 }
@@ -255,7 +259,6 @@ a {
 
 .signupHeader {
   padding-bottom: 625px;
-  background-image: none;
 }
 
 .signupTimer {
@@ -356,6 +359,10 @@ img.error {
     width: 82.7%;
     margin: auto;
   }
+  header {
+    background-size: 69%;
+    background-position: 170% -25%;
+  }
   img.logo {
     display: block;
     margin: 0;
@@ -412,6 +419,10 @@ img.error {
   .card button {
     margin: 0;
   }
+  .card a {
+    margin-left: 0;
+    margin-top: 15px;
+  }
   footer {
     margin-top: -1120px;
   }
@@ -429,6 +440,9 @@ img.error {
   }
   .contentWrapperSignUp .secondary p {
     text-align: center;
+  }
+  .signupHeader {
+    background-image: none;
   }
 }
 
@@ -468,6 +482,8 @@ img.error {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     justify-items: center;
+    padding-left: 40px;
+    padding-right: 40px;
   }
   .card h3 {
     margin-top: 40px;

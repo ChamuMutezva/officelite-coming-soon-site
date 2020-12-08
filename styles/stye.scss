@@ -19,7 +19,7 @@ header {
     padding-top: 46px;
     background-image: url(../assets/home/bg-pattern-header.svg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 110%;
     background-color: #fafafa;
     background-position: center -130px;
     padding-bottom: 725px;
@@ -62,9 +62,9 @@ p {
     margin: 0px auto 24px;
 }
 
-button {
-    /* width: 200px; */
-    padding: 14px 45.5px;
+a {
+    width: 171px; 
+    padding: 15px 46px;
     background-color: $btn-bg-color;
     font-weight: 600;
     margin: auto;
@@ -74,6 +74,8 @@ button {
     color: white;
     border-radius: 28px;
     border: none;
+    text-decoration: none;
+    text-align: center;
 }
 
 main {
@@ -123,8 +125,9 @@ main {
 .basic {
     background-color: white;
 
-    button {
+    a {
         background-color: #cedddd;
+        color: $btn-bg-color;
     }
 }
 
@@ -139,7 +142,7 @@ main {
         color: white;
     }
 
-    button {
+    a {
         background-color: white;
         color: $btn-bg-color;
     }
@@ -148,8 +151,9 @@ main {
 .ultimate {
     background-color: white;
 
-    button {
+    a {
         background-color: #e0f0ef;
+        color: $btn-bg-color;
     }
 }
 
@@ -226,20 +230,6 @@ footer {
     }
 }
 
-a {
-    padding: 10px 10px;
-    background-color: $btn-bg-color;
-    font-weight: 600;
-    margin: auto;
-    display: block;
-    line-height: 28px;
-    font-size: 0.88rem;
-    color: white;
-    border-radius: 28px;
-    width: 169px;
-    text-decoration: none;
-}
-
 .errorDisplay {
     visibility: visible;
 }
@@ -251,7 +241,7 @@ a {
 //SIGNUP MOBILE SPECIFIC STYLING
 .signupHeader {
     padding-bottom: 625px;
-    background-image: none;
+   // background-image: none;
 }
 
 .signupTimer {
@@ -312,7 +302,7 @@ input.submitForm {
     max-width: 90%;
     border-radius: 28px;
     color: white;
-    font-weight: 600;   
+    font-weight: 600;
     border: none;
 }
 
@@ -348,6 +338,10 @@ img.error {
     .contentWrapper {
         width: 82.7%;
         margin: auto;
+    }
+    header {       
+        background-size: 69%;      
+        background-position: 170% -25%;       
     }
 
     img.logo {
@@ -406,6 +400,10 @@ img.error {
         button {
             margin: 0;
         }
+        a {
+            margin-left: 0;
+            margin-top: 15px;
+        }
     }
 
     footer {
@@ -427,6 +425,10 @@ img.error {
         .secondary p {
             text-align: center;
         }
+    }
+
+    .signupHeader {       
+       background-image: none;
     }
 
     //----end of Signup form styling tablet ------
@@ -469,6 +471,8 @@ img.error {
         width: 350px;
         grid-template-columns: 1fr;
         justify-items: center;
+        padding-left: 40px;
+        padding-right: 40px;
 
         h3 {
             margin-top: 40px;

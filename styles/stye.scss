@@ -240,9 +240,10 @@ a {
     text-decoration: none;
 }
 
-.errorDisplay{
+.errorDisplay {
     visibility: visible;
 }
+
 .invalidInput {
     border-bottom: 1px solid red;
 }
@@ -252,6 +253,7 @@ a {
     padding-bottom: 625px;
     background-image: none;
 }
+
 .signupTimer {
     padding-top: 0px;
 }
@@ -280,7 +282,7 @@ label {
     padding: 5px;
     font-size: 1rem;
     align-items: baseline;
-   
+
 }
 
 input {
@@ -295,15 +297,8 @@ input {
     border-bottom: 1px solid rgb(10, 5, 5);
 }
 
-small {
-    position: absolute;
-    bottom: -20px;
-    color: #F67E7E;
-    font-size: 1rem;
-    visibility: hidden;
-}
-
 select#plan-select {
+    font-size: 1rem;
     width: 100%;
     border: none;
     outline: none;
@@ -316,11 +311,15 @@ input.submitForm {
     width: 279px;
     max-width: 90%;
     border-radius: 28px;
+    color: white;
+    font-weight: 600;   
+    border: none;
 }
 
 .signupMain {
     top: -578px;
 }
+
 .confirmation {
     right: 10px;
     position: absolute;
@@ -335,6 +334,11 @@ img.error {
 
 .confirmed {
     visibility: visible !important;
+}
+
+.countdownSignup p {
+    background-color: #d1ece5;
+    color: $btn-bg-color
 }
 
 // END OF SIGNUP MOBILE PAGE STYLING
@@ -415,13 +419,16 @@ img.error {
     //------Signup form styling tablet ------
     .contentWrapperSignUp {
         flex-direction: column;
+
         h1 {
             text-align: center;
         }
+
         .secondary p {
             text-align: center;
         }
     }
+
     //----end of Signup form styling tablet ------
 }
 
@@ -499,6 +506,7 @@ img.error {
     a {
         margin: auto 0;
     }
+
     //signup desktop
     .signupMain {
         top: 78px;
@@ -507,6 +515,7 @@ img.error {
         grid-template-columns: 1fr;
         width: 35.15%;
     }
+
     .signupFooter {
         top: 0;
         position: absolute;
@@ -515,6 +524,7 @@ img.error {
         right: 0;
         height: 100vh;
     }
+
     .signupHeader {
         padding-bottom: 0;
         height: 100vh;
@@ -527,5 +537,5 @@ img.error {
         max-width: 1490px;
         margin: 0 auto;
     }
-    
+
 }

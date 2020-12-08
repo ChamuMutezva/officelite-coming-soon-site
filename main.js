@@ -91,6 +91,7 @@ inputs.forEach((input, idk) => {
 })
 
 if (form !== null) {
+    resetInputs = true
     form.addEventListener("submit", (evt) => {
         console.log(evt.target);
         evt.preventDefault();
